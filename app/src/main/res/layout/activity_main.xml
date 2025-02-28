@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="324dp"
+        android:text="Sonuç:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Bir sayı giriniz"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Bir sayı giriniz"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="292dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="455dp"
+            android:onClick="topla"
+            android:text="+"
+            android:textColorLink="#4CAF50" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:onClick="cikar"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:onClick="bol"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:onClick="carp"
+            android:text="*" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
